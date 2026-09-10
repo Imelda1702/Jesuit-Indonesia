@@ -130,7 +130,7 @@ const activeJesuits = [
   { name: "P. Isodorus Bangkit Susetyo Adi Nugroho", role: "Staf SMA YPPK Adhi Luhur", place: "Nabire, Papua", since: "2025", ordination: "Imam 23 Jul 2025, Gereja St. Antonius Padua, Kotabaru, Yogyakarta" },
   { name: "P. Leo Perkasa Tanjung", role: "Studi Kitab Suci di Biblicum", place: "Roma", since: "2025", ordination: "Imam 23 Jul 2025, Gereja St. Antonius Padua, Kotabaru, Yogyakarta" },
   { name: "P. Jacobus Aditya Christie Manggala", role: "Direktur Campus Ministry, Universitas Sanata Dharma", place: "Yogyakarta", since: "2025", ordination: "Imam 23 Jul 2025, Gereja St. Antonius Padua, Kotabaru, Yogyakarta" },
-  { name: "P. Roberthus (Robert) Rimmin", role: "Imam Jesuit senior; karya misi di Timor Leste sejak tahbisan", place: "Timor Leste", since: "1999", ordination: "Imam 14 Jul 1999, Yogyakarta (bersama P. Tarcisius Dewanto dkk.)", catatan: "Imam senior, bukan mahasiswa/skolastik dalam formasi." },
+  { name: "P. Roberthus (Robert) Rimmin", role: "Pastor mahasiswa Jakarta Barat; komunitas Beato Rupert Mayer", place: "Jakarta", since: "", ordination: "Imam 14 Jul 1999, Yogyakarta (bersama P. Tarcisius Dewanto dkk.)" },
   { name: "S. Adrianus Raditya Indriyatno", role: "Mahasiswa filsafat, STF Driyarkara (tinggal di Kolese Hermanum)", place: "Jakarta", since: "2026" },
   { name: "S. Septian Kurniawan", role: "Mahasiswa teologi tahun pertama, FTW (Kolese St. Ignatius / Kolsani)", place: "Yogyakarta", since: "2026" },
   { name: "Br. Nicolaus David Kristianto", role: "Bruder Jesuit; pembaharu kaul, Retret Bruder JCAP, Girisonta", place: "Girisonta", since: "2024" },
@@ -181,8 +181,7 @@ const activeJesuits = [
   { name: "P. Bernardus Christian Triyudo Prastowo", role: "Pastor Kepala Paroki Santo Petrus dan Paulus, Mangga Besar (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "2025" },
   { name: "P. Vincentius Haryanto", role: "Tugas di Rumah Retret Panti Semedi, Klaten", place: "Klaten", since: "" },
   { name: "P. Benny Beatus Wetty", role: "Pastor di Paroki Santa Theresia, Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
-  { name: "P. Tito", role: "Pastor di Paroki Santa Theresia, Jakarta (komunitas Beato Rupert Mayer); nama lengkap perlu dikonfirmasi", place: "Jakarta", since: "" },
-  { name: "P. Robert", role: "Pastor di Paroki Santa Theresia, Jakarta (komunitas Beato Rupert Mayer); nama lengkap perlu dikonfirmasi", place: "Jakarta", since: "" },
+  { name: "P. Tito", role: "Pastor di Paroki Santa Theresia, Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
 ];
 
 /* ---------- TELAH BERPU-LANG / MENINGGAL (dari Obituari) ----------
@@ -560,7 +559,7 @@ const communities = [
   { name: "Kolese Le Cocq d'Armandville", place: "Papua", superior: "P. Yohanes Sudriyanto", priests: 7, scholastics: 0, brothers: 2, total: 9, members: ["P. Yohanes Sudriyanto"] },
   { name: "Seminari St. Petrus Kanisius", place: "Mertoyudan", superior: "P. Leo Agung Sardi", priests: 9, scholastics: 1, brothers: 1, total: 11, members: ["P. Leo Agung Sardi", "P. Gregorius Agung Satriyo Wibisono", "S. Beda Holy Septianno"] },
   { name: "Kolese St. Petrus Kanisius", place: "Wonosari", superior: "P. Joannes Heru Hendarto", priests: 10, scholastics: 2, brothers: 3, total: 15, members: ["P. Joannes Heru Hendarto"] },
-  { name: "Beato Rupert Mayer", place: "Jakarta", superior: "", priests: 18, scholastics: 0, brothers: 0, total: 18, members: ["P. Macarius Maharsono Probho", "P. Yohanes Deodatus", "P. Bernardus Christian Triyudo Prastowo", "P. Joannes Maryana", "P. Yusup Edi Mulyono", "P. Benny Beatus Wetty", "P. Tito", "P. Robert"] },
+  { name: "Beato Rupert Mayer", place: "Jakarta", superior: "", priests: 18, scholastics: 0, brothers: 0, total: 18, members: ["P. Macarius Maharsono Probho", "P. Yohanes Deodatus", "P. Bernardus Christian Triyudo Prastowo", "P. Joannes Maryana", "P. Yusup Edi Mulyono", "P. Benny Beatus Wetty", "P. Tito", "P. Roberthus (Robert) Rimmin"] },
   { name: "Beato Miguel Pro", place: "Jakarta", superior: "P. Simon Petrus Bambang Ponco Santosa", total: null, members: ["P. Simon Petrus Bambang Ponco Santosa", "P. Ignatius Suryadi", "P. Franciscus Xaverius Dedomau Djatmiko da Gomez"] },
   { name: "Kolese Hermanum", place: "Jakarta", superior: "", total: null, members: ["P. Thomas Hidya Tjaya", "P. Ferdinandus Effendi Kusuma Sunur", "P. Thomas Aquinas Maswan Susinto", "P. Josephus Ageng Marwata", "P. Odemus Bei Witono", "P. Ignatius Windar Santoso", "P. Fransiskus Wawan Setyadi", "S. Adrianus Raditya Indriyatno"] },
   { name: "Komunitas Gonzaga", place: "Jakarta", superior: "P. Emmanuel Baskoro Poedjinoegroho", total: null, members: ["P. Emmanuel Baskoro Poedjinoegroho", "P. Eduard C. Ratu Dopo", "P. Yulius Suroso"] },
@@ -649,7 +648,6 @@ const otherJesuits = [
   { name: "P. Isodorus Bangkit Susetyo Adi Nugroho", role: "Staf SMA YPPK Adhi Luhur" },
   { name: "P. Leo Perkasa Tanjung", role: "Studi Kitab Suci di Biblicum" },
   { name: "P. Jacobus Aditya Christie Manggala", role: "Direktur Campus Ministry, Universitas Sanata Dharma" },
-  { name: "P. Roberthus (Robert) Rimmin", role: "Imam Jesuit senior; karya misi di Timor Leste sejak tahbisan" },
   { name: "Br. Yohanes Sarju", role: "Kepala Departemen Pengembangan SDM – Pelayanan Umum – Tenaga Gereja, KWI" },
   { name: "P. Franz Magnis-Suseno", role: "Dosen Program Doktor Filsafat, STF Driyarkara" },
   { name: "P. Justinus Sudarminta", role: "Ketua Senat Dosen & pengajar S2/S3, STF Driyarkara" },
