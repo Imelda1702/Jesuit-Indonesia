@@ -1,0 +1,6 @@
+.git
+.gitignore
+.railway
+.dockerignore
+Dockerfile
+.DS_Store

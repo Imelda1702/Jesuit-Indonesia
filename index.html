@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romo Jesuit Indonesia — Direktori</title>
+  <meta name="description" content="Direktori nama Romo Jesuit (Serikat Jesus) Provinsi Indonesia yang masih aktif bertugas dan yang telah berpulang." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-strip">
+      <a class="donate-link" href="https://jesuits.id/donation/" target="_blank" rel="noopener">DONASI</a>
+      <div class="top-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Ganti tema" title="Ganti tema">◐</button>
+        <button id="langToggle" class="lang-toggle" type="button" aria-label="Ganti bahasa" title="Ganti bahasa">EN</button>
+      </div>
+    </div>
+    <div class="header-center">
+      <img class="header-logo" src="logo-ihs.png" alt="Logo Serikat Jesus (IHS)" />
+      <div class="header-title-wrap">
+        <h1 class="site-title" data-i18n="siteTitle">ROMO JESUIT INDONESIA</h1>
+        <p class="site-sub" data-i18n="siteSub">PROVINSI INDONESIA · SERIKAT JESUS</p>
+        <p class="site-pilgrim" data-i18n="sitePilgrim">Peziarah dalam Misi Kristus</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p data-i18n="heroIntro">
+        Direktori ini memuat nama para Pater &amp; Bruder Jesuit (S.J.) Indonesia
+        — yang <strong>masih aktif bertugas</strong> di berbagai karya dan lokasi,
+        serta yang <strong>telah berpulang</strong> dengan kasih.
+      </p>
+      <p class="source-note" data-i18n="sourceNote">
+        Sumber data: <a href="https://jesuits.id/berita-pengutusan/" target="_blank" rel="noopener">Berita Pengutusan</a>
+        &amp; <a href="https://jesuits.id/" target="_blank" rel="noopener">Obituari Jesuit Indonesia</a>.
+        Bukan daftar resmi; disusun otomatis dan dapat berubah.
+      </p>
+    </section>
+
+    <div class="search-row">
+      <input type="search" id="search" data-i18n-placeholder="searchPlaceholder" placeholder="Cari nama, lokasi, atau tugas…" autocomplete="off" />
+    </div>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-view="active" role="tab">
+        <span data-i18n="tabActive">Aktif Bertugas</span> <span class="pill" id="countActive">0</span>
+      </button>
+      <button class="tab" data-view="deceased" role="tab">
+        <span data-i18n="tabDeceased">Telah Berpulang</span> <span class="pill" id="countDeceased">0</span>
+      </button>
+    </nav>
+
+    <section id="activeView" class="view" role="tabpanel">
+      <p class="view-hint" data-i18n="activeHint">Pater, Bruder, &amp; skolastik Jesuit yang kini aktif bertugas/karya di berbagai lokasi.</p>
+      <div class="filter-row">
+        <span class="filter-label" data-i18n="categoryLabel">Kategori</span>
+        <div class="cat-wrap">
+          <button class="nav-arrow" id="catPrev" type="button" aria-label="Sebelumnya">‹</button>
+          <div class="cat-carousel" id="catCarousel">
+            <button class="cat-card active" data-cat="" type="button">
+              <span class="cat-label" data-i18n="catAll">Semua</span>
+              <span class="cat-num" data-count="all">0</span>
+            </button>
+            <button class="cat-card" data-cat="mahasiswa" type="button">
+              <span class="cat-label" data-i18n="catStudents">Mahasiswa / Skolastik</span>
+              <span class="cat-num" data-count="mahasiswa">0</span>
+            </button>
+            <button class="cat-card" data-cat="pater" type="button">
+              <span class="cat-label" data-i18n="catFathers">Pater / Imam</span>
+              <span class="cat-num" data-count="pater">0</span>
+            </button>
+            <button class="cat-card" data-cat="bruder" type="button">
+              <span class="cat-label" data-i18n="catBrothers">Bruder</span>
+              <span class="cat-num" data-count="bruder">0</span>
+            </button>
+            <button class="cat-card" data-cat="provincial" type="button">
+              <span class="cat-label" data-i18n="catProvincials">Provinsial SJ</span>
+              <span class="cat-num" data-count="provincial">0</span>
+            </button>
+          </div>
+          <button class="nav-arrow" id="catNext" type="button" aria-label="Berikutnya">›</button>
+        </div>
+        <span id="activeCount" class="result-count"></span>
+      </div>
+      <div class="list-wrap">
+        <button class="nav-arrow" id="listPrev" type="button" aria-label="Sebelumnya">‹</button>
+        <div id="activeList" class="list carousel"></div>
+        <button class="nav-arrow" id="listNext" type="button" aria-label="Berikutnya">›</button>
+      </div>
+    </section>
+
+    <section id="deceasedView" class="view hidden" role="tabpanel">
+      <p class="view-hint" data-i18n="deceasedHint">Para Jesuit Indonesia yang telah kembali ke rumah Bapa. Tampil riwayat: lahir, masuk novisiat, tahbisan imam, kaul kekal, &amp; studi.<br>*Semoga mereka beristirahat dalam damai.*</p>
+      <div id="deceasedList" class="list deceased"></div>
+    </section>
+
+    <p id="emptyState" class="empty hidden" data-i18n="emptyState">Tidak ada hasil untuk pencarian tersebut.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footerText">Dikompilasi dari berbagai situs resmi Katolik.</p>
+      <p class="motto" data-i18n="motto">Ad Maiorem Dei Gloriam — Demi Kemuliaan Allah yang Lebih Besar.</p>
+      <p class="credit" data-i18n="credit">Dibuat oleh Yayasan Santa Adeline Kasih</p>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
