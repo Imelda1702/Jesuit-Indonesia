@@ -558,7 +558,7 @@ const communities = [
   { name: "Beato Miguel Pro", place: "Jakarta", superior: "P. Simon Petrus Bambang Ponco Santosa", total: null, members: ["P. Simon Petrus Bambang Ponco Santosa", "P. Ignatius Suryadi"] },
   { name: "Kolese Hermanum", place: "Jakarta", superior: "", total: null, members: ["P. Thomas Hidya Tjaya", "P. Ferdinandus Effendi Kusuma Sunur", "P. Thomas Aquinas Maswan Susinto", "P. Josephus Ageng Marwata", "P. Odemus Bei Witono", "P. Ignatius Windar Santoso", "S. Adrianus Raditya Indriyatno"] },
   { name: "Komunitas Gonzaga", place: "Jakarta", superior: "P. Emmanuel Baskoro Poedjinoegroho", total: null, members: ["P. Emmanuel Baskoro Poedjinoegroho", "P. Eduard C. Ratu Dopo", "P. Yulius Suroso"] },
-  { name: "Kolese Kanisius", place: "Menteng, Jakarta", superior: "P. Leonardus Evert Bambang Winandoko", total: null, members: ["P. Leonardus Evert Bambang Winandoko", "P. Benedictus Bambang Triatmoko", "P. Thomas Becket Gandi Hartana", "P. Markus Sjamsul Wanandi", "P. Alexander Koko Siswijayanto", "P. Albertus Buddy Haryadi", "P. Baskara T. Wardaya", "P. Ignatius Ismartono", "Br. Matheus Sugiyono", "Fr. Leander Emanuel Arya Wikan Prabantara"] },
+  { name: "Kolese Kanisius", place: "Menteng, Jakarta", superior: "P. Leonardus Evert Bambang Winandoko", total: null, members: ["P. Leonardus Evert Bambang Winandoko", "P. Benedictus Bambang Triatmoko", "P. Thomas Becket Gandi Hartana", "P. Markus Sjamsul Wanandi", "P. Alexander Koko Siswijayanto", "P. Albertus Buddy Haryadi", "P. Baskara T. Wardaya", "P. Ignatius Ismartono", "P. Christoforus Kristiono Puspo", "Br. Matheus Sugiyono", "Fr. Leander Emanuel Arya Wikan Prabantara"] },
 ];
 
 /* Anggota yang komunitasnya belum teridentifikasi dari data publik. */
@@ -628,7 +628,6 @@ const otherJesuits = [
   { name: "P. Andreas Aryono Mantiri", role: "Bendahara Pengurus Yayasan Taman Tani / Asisten Ekonom Provindo" },
   { name: "P. Stefanus Hendrianto", role: "Imam Jesuit Provinsi Jesuits West (Amerika Serikat); ditahbiskan 8 Juni 2019, Gereja Our Lady of La Vang, Portland, Oregon; mantan aktivis pro-demokrasi 1998" },
   { name: "P. Heinrich Angga Indraswara", role: "Imam Jesuit, bertugas di Paroki St. Yohanes Maria Vianney, Jakarta (ditahbiskan 2018)" },
-  { name: "P. Christoforus Kristiono Puspo", role: "ATMI Recycle Studio (ARS)" },
   { name: "P. Agustinus Winaryanta", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan" },
   { name: "P. Christoforus Bayu Risanto", role: "Ahli Meteorologi, Vatican Observatory & Research Associate, University of Arizona" },
   { name: "P. Thomas Septi Widhiyudana", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan" },
