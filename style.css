@@ -461,3 +461,16 @@ mark { background: var(--primary-soft); color: var(--primary); border-radius: 3p
 .comm-sup { margin: 0 0 6px; font-size: .85rem; color: var(--text); }
 .comm-parts { margin: 0; font-size: .8rem; color: var(--muted); }
 .comm-card .badge { position: absolute; top: 12px; right: 12px; }
+
+.comm-members {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  max-height: 220px;
+  overflow: auto;
+  font-size: .82rem;
+  color: var(--text);
+}
+.comm-members li { margin: 2px 0; }
+.comm-card.other { grid-column: 1 / -1; }
+.comm-card.other .comm-members { max-height: 320px; columns: 2; column-gap: 24px; }
+@media (max-width: 640px) { .comm-card.other .comm-members { columns: 1; } }

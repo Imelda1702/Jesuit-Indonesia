@@ -20,6 +20,8 @@ const i18n = {
     superiorLabel: "Superior",
     membersLabel: "anggota",
     communitiesCount: "komunitas",
+    otherLabel: "Belum teridentifikasi komunitasnya",
+    otherHint: "Anggota yang komunitasnya belum dapat dipastikan dari data publik.",
     activeHint: "Pater, Bruder, & skolastik Jesuit yang kini aktif bertugas/karya di berbagai lokasi.",
     deceasedHint: "Para Jesuit Indonesia yang telah kembali ke rumah Bapa. Tampil riwayat: lahir, masuk novisiat, tahbisan imam, kaul kekal, & studi.<br>*Semoga mereka beristirahat dalam damai.*",
     categoryLabel: "Kategori",
@@ -52,6 +54,8 @@ const i18n = {
     superiorLabel: "Superior",
     membersLabel: "members",
     communitiesCount: "communities",
+    otherLabel: "Community not identified",
+    otherHint: "Members whose community could not be determined from public data.",
     activeHint: "Jesuit priests, brothers, and scholastics currently serving in various ministries and places.",
     deceasedHint: "Indonesian Jesuits who have returned to the Father's house. Showing: birth, entrance into the novitiate, priestly ordination, final vows, & studies.<br>*May they rest in peace.*",
     categoryLabel: "Category",
@@ -214,15 +218,27 @@ function renderCommunities() {
     if (c.scholastics != null) parts.push(`${c.scholastics} ${t.statScholastics}`);
     if (c.brothers != null) parts.push(`${c.brothers} ${t.statBrothers}`);
     if (c.novices != null) parts.push(`${c.novices} novis`);
+    const mem = (c.members || []).map((n) => `<li>${n}</li>`).join("");
     card.innerHTML = `
       <h3>${c.name}</h3>
       ${c.place ? `<p class="comm-place">${c.place}</p>` : ""}
       ${c.superior ? `<p class="comm-sup">${t.superiorLabel}: ${c.superior}</p>` : ""}
       ${parts.length ? `<p class="comm-parts">${parts.join(" · ")}</p>` : ""}
       <span class="badge">${c.total != null ? c.total + " " + t.membersLabel : "—"}</span>
+      ${mem ? `<ul class="comm-members">${mem}</ul>` : ""}
     `;
     frag.appendChild(card);
   });
+  if (typeof otherJesuits !== "undefined" && otherJesuits.length) {
+    const card = document.createElement("article");
+    card.className = "comm-card other";
+    card.innerHTML = `
+      <h3>${t.otherLabel} (${otherJesuits.length})</h3>
+      <p class="comm-place">${t.otherHint}</p>
+      <ul class="comm-members">${otherJesuits.map((j) => `<li>${j.name}</li>`).join("")}</ul>
+    `;
+    frag.appendChild(card);
+  }
   listEl.appendChild(frag);
 }
 
