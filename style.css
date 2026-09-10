@@ -411,3 +411,53 @@ mark { background: var(--primary-soft); color: var(--primary); border-radius: 3p
   .list { grid-template-columns: 1fr; }
   .tab { font-size: .85rem; padding: 10px 8px; }
 }
+
+/* ---------- Komunitas & statistik ---------- */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin: 16px 0 24px;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.stat-num {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.1;
+}
+.stat-label {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: var(--muted);
+}
+.stat-sub { font-size: .7rem; color: var(--muted); }
+.comm-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.comm-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px 16px 20px;
+}
+.comm-card h3 { margin: 0 0 4px; font-size: 1rem; color: var(--primary-dark); }
+.comm-place { margin: 0 0 6px; font-size: .8rem; color: var(--primary); }
+.comm-sup { margin: 0 0 6px; font-size: .85rem; color: var(--text); }
+.comm-parts { margin: 0; font-size: .8rem; color: var(--muted); }
+.comm-card .badge { position: absolute; top: 12px; right: 12px; }

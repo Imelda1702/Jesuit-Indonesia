@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260910c" />
+  <link rel="stylesheet" href="style.css?v=20260910d" />
 </head>
 <body>
   <header class="site-header">
@@ -53,6 +53,9 @@
       </button>
       <button class="tab" data-view="deceased" role="tab">
         <span data-i18n="tabDeceased">Telah Berpulang</span> <span class="pill" id="countDeceased">0</span>
+      </button>
+      <button class="tab" data-view="communities" role="tab">
+        <span data-i18n="tabCommunities">Komunitas</span> <span class="pill" id="countCommunities">0</span>
       </button>
     </nav>
 
@@ -100,6 +103,12 @@
       <div id="deceasedList" class="list deceased"></div>
     </section>
 
+    <section id="communitiesView" class="view hidden" role="tabpanel">
+      <p class="view-hint" data-i18n="communitiesHint">Ringkasan jumlah anggota &amp; superior per komunitas Serikat Jesus Provinsi Indonesia (sumber: halaman komunitas jesuits.id; angka dapat berubah).</p>
+      <div id="provinceStats" class="stats-row"></div>
+      <div id="communitiesList" class="comm-grid"></div>
+    </section>
+
     <p id="emptyState" class="empty hidden" data-i18n="emptyState">Tidak ada hasil untuk pencarian tersebut.</p>
   </main>
 
@@ -111,7 +120,7 @@
     </div>
   </footer>
 
-  <script src="data.js?v=20260910c"></script>
-  <script src="app.js?v=20260910c"></script>
+  <script src="data.js?v=20260910d"></script>
+  <script src="app.js?v=20260910d"></script>
 </body>
 </html>

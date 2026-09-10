@@ -530,3 +530,35 @@ const provincials = [
   { name: "P. Paulus Suradibrata", period: "1975–1981", detail: "Pater Sura; dari Bantul. Orang Asia pertama jadi Asisten Jenderal Asia Timur & Oseania. Wafat 1 Jan 2018.", photo: "photos/suradibrata.jpg" },
   { name: "P. Antonius Soenarja", period: "1971–1975", detail: "Provincial pertama; dari Klaten. Wafat 30 Sep 1988.", photo: "photos/soenarja.jpg" },
 ];
+
+/* ---------- RINGKASAN PROVINSI & KOMUNITAS ----------
+   Sumber: halaman Komunitas jesuits.id (jumlah anggota & superior).
+   Angka dapat berubah; sebagian halaman komunitas mungkin belum diperbarui.
+   Total resmi Provinsi Indonesia (2021): 339 Jesuit = 246 imam + 74 skolastik + 19 bruder. */
+const provinceStats = {
+  asOf: "2021",
+  total: 339,
+  priests: 246,
+  scholastics: 74,
+  brothers: 19,
+  source: "JCAP / Provinsi Indonesia SJ"
+};
+
+const communities = [
+  { name: "Kolese St. Robertus Bellarminus", place: "Yogyakarta (Mrican)", superior: "P. Benedictus Hari Juliawan", priests: 22, scholastics: 0, brothers: 3, total: 25 },
+  { name: "Kolese Johanes de Britto", place: "Yogyakarta", superior: "P. Antonius Gustawan", priests: 11, scholastics: 1, brothers: 1, total: 13 },
+  { name: "Komunitas Bener", place: "Bener, Purworejo", superior: "P. Yosephus Ispuroyanto Iswarahadi", total: null },
+  { name: "Kolese St. Ignatius", place: "Yogyakarta", superior: "P. Andreas Sugijopranoto", priests: 18, scholastics: 16, brothers: 3, total: 37 },
+  { name: "Santo Stanislaus", place: "Girisonta", superior: "P. Laurentius Priyo Poedjiono", priests: 34, scholastics: 0, brothers: 3, novices: 18, total: 55 },
+  { name: "Kolese Mikael", place: "Surakarta", superior: "P. Markus Sjamsul Wanandi", priests: 12, scholastics: 1, brothers: 1, total: 14 },
+  { name: "Komunitas Santo Yusup", place: "Indonesia", superior: "", priests: 13, scholastics: 0, brothers: 0, total: 13 },
+  { name: "Rumah Provinsialat SJ", place: "Semarang", superior: "P. Bambang Alfred Sipayung", priests: 13, scholastics: 0, brothers: 2, total: 15 },
+  { name: "Kolese Loyola", place: "Indonesia", superior: "P. Yakobus Rudiyanto", priests: 5, scholastics: 2, brothers: 0, total: 7 },
+  { name: "Kolese Le Cocq d'Armandville", place: "Papua", superior: "P. Yohanes Sudriyanto", priests: 7, scholastics: 0, brothers: 2, total: 9 },
+  { name: "Seminari St. Petrus Kanisius", place: "Mertoyudan", superior: "P. Leo Agung Sardi", priests: 9, scholastics: 1, brothers: 1, total: 11 },
+  { name: "Kolese St. Petrus Kanisius", place: "Wonosari", superior: "P. Joannes Heru Hendarto", priests: 10, scholastics: 2, brothers: 3, total: 15 },
+  { name: "Beato Rupert Mayer", place: "Indonesia", superior: "P. Albertus Hani Rudi Hartoko", priests: 18, scholastics: 0, brothers: 0, total: 18 },
+  { name: "Beato Miguel Pro", place: "Jakarta", superior: "P. Simon Petrus Bambang Ponco Santosa", total: null },
+  { name: "Kolese Hermanum", place: "Jakarta", superior: "", total: null },
+  { name: "Komunitas Gonzaga", place: "Jakarta", superior: "P. Emmanuel Baskoro Poedjinoegroho", total: null }
+];

@@ -10,6 +10,16 @@ const i18n = {
     searchPlaceholder: "Cari nama, lokasi, atau tugas…",
     tabActive: "Aktif Bertugas",
     tabDeceased: "Telah Berpulang",
+    tabCommunities: "Komunitas",
+    communitiesHint: "Ringkasan jumlah anggota & superior per komunitas Serikat Jesus Provinsi Indonesia (sumber: halaman komunitas jesuits.id; angka dapat berubah).",
+    statTotal: "Total Jesuit",
+    statPriests: "Imam",
+    statScholastics: "Skolastik",
+    statBrothers: "Bruder",
+    statAsOf: "data",
+    superiorLabel: "Superior",
+    membersLabel: "anggota",
+    communitiesCount: "komunitas",
     activeHint: "Pater, Bruder, & skolastik Jesuit yang kini aktif bertugas/karya di berbagai lokasi.",
     deceasedHint: "Para Jesuit Indonesia yang telah kembali ke rumah Bapa. Tampil riwayat: lahir, masuk novisiat, tahbisan imam, kaul kekal, & studi.<br>*Semoga mereka beristirahat dalam damai.*",
     categoryLabel: "Kategori",
@@ -32,6 +42,16 @@ const i18n = {
     searchPlaceholder: "Search name, location, or role…",
     tabActive: "Active in Mission",
     tabDeceased: "Deceased",
+    tabCommunities: "Communities",
+    communitiesHint: "Summary of members and superior per community of the Indonesian Province of the Society of Jesus (source: jesuits.id community pages; figures may change).",
+    statTotal: "Total Jesuits",
+    statPriests: "Priests",
+    statScholastics: "Scholastics",
+    statBrothers: "Brothers",
+    statAsOf: "data",
+    superiorLabel: "Superior",
+    membersLabel: "members",
+    communitiesCount: "communities",
     activeHint: "Jesuit priests, brothers, and scholastics currently serving in various ministries and places.",
     deceasedHint: "Indonesian Jesuits who have returned to the Father's house. Showing: birth, entrance into the novitiate, priestly ordination, final vows, & studies.<br>*May they rest in peace.*",
     categoryLabel: "Category",
@@ -66,6 +86,7 @@ document.getElementById("langToggle").addEventListener("click", () => {
   localStorage.setItem("sj-lang", lang);
   applyLang();
   applyFilter();
+  if (currentView === "communities") renderCommunities();
 });
 
 const activeListEl = document.getElementById("activeList");
@@ -172,6 +193,39 @@ function renderDeceased(list) {
   deceasedListEl.appendChild(frag);
 }
 
+function renderCommunities() {
+  const t = i18n[lang];
+  const statsEl = document.getElementById("provinceStats");
+  const listEl = document.getElementById("communitiesList");
+  const ps = provinceStats;
+  statsEl.innerHTML = `
+    <div class="stat-card"><span class="stat-num">${ps.total}</span><span class="stat-label">${t.statTotal}</span><span class="stat-sub">${t.statAsOf} ${ps.asOf}</span></div>
+    <div class="stat-card"><span class="stat-num">${ps.priests}</span><span class="stat-label">${t.statPriests}</span></div>
+    <div class="stat-card"><span class="stat-num">${ps.scholastics}</span><span class="stat-label">${t.statScholastics}</span></div>
+    <div class="stat-card"><span class="stat-num">${ps.brothers}</span><span class="stat-label">${t.statBrothers}</span></div>
+  `;
+  listEl.innerHTML = "";
+  const frag = document.createDocumentFragment();
+  communities.forEach((c) => {
+    const card = document.createElement("article");
+    card.className = "comm-card";
+    const parts = [];
+    if (c.priests != null) parts.push(`${c.priests} ${t.statPriests}`);
+    if (c.scholastics != null) parts.push(`${c.scholastics} ${t.statScholastics}`);
+    if (c.brothers != null) parts.push(`${c.brothers} ${t.statBrothers}`);
+    if (c.novices != null) parts.push(`${c.novices} novis`);
+    card.innerHTML = `
+      <h3>${c.name}</h3>
+      ${c.place ? `<p class="comm-place">${c.place}</p>` : ""}
+      ${c.superior ? `<p class="comm-sup">${t.superiorLabel}: ${c.superior}</p>` : ""}
+      ${parts.length ? `<p class="comm-parts">${parts.join(" · ")}</p>` : ""}
+      <span class="badge">${c.total != null ? c.total + " " + t.membersLabel : "—"}</span>
+    `;
+    frag.appendChild(card);
+  });
+  listEl.appendChild(frag);
+}
+
 let currentQuery = "";
 let currentView = "active";
 let currentCat = "";
@@ -193,6 +247,7 @@ function applyActiveFilter() {
 
 function applyFilter() {
   const q = normalize(currentQuery.trim());
+  if (currentView === "communities") return;
   if (currentView === "active") {
     const filtered = applyActiveFilter();
     renderActive(filtered);
@@ -220,6 +275,8 @@ function setView(view) {
   );
   document.getElementById("activeView").classList.toggle("hidden", view !== "active");
   document.getElementById("deceasedView").classList.toggle("hidden", view !== "deceased");
+  document.getElementById("communitiesView").classList.toggle("hidden", view !== "communities");
+  if (view === "communities") renderCommunities();
   applyFilter();
 }
 
@@ -270,6 +327,7 @@ document.getElementById("listNext").addEventListener("click", () => scrollList(1
 function init() {
   document.getElementById("countActive").textContent = activeJesuits.length;
   document.getElementById("countDeceased").textContent = deceasedJesuits.length;
+  document.getElementById("countCommunities").textContent = communities.length;
   countCats();
   applyLang();
   setView("active");
