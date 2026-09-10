@@ -1,7 +1,11 @@
 /* ============================================================
    Data Romo Jesuit Indonesia (PROVINDO)
-   Sumber: https://jesuits.id (Berita Pengutusan & Obituari)
+   Sumber: https://jesuits.id (Berita Pengutusan, Obituari, Komunitas)
    Dikompilasi per September 2026. Bukan daftar resmi.
+   Catatan: Provinsi Indonesia memiliki ±339 Jesuit (246 imam,
+   74 skolastik, 19 bruder; data 2021). Daftar lengkap per nama
+   tidak dipublikasikan (hanya Catalogus internal), sehingga
+   direktori ini belum lengkap.
    ============================================================ */
 
 /* ---------- MASIH AKTIF BERTUGAS (dari Berita Pengutusan) ---------- */
@@ -148,6 +152,31 @@ const activeJesuits = [
   { name: "Kardinal Ignatius Suharyo", role: "Uskup Agung Jakarta (Kardinal, S.J.)", place: "Jakarta", since: "2010" },
   { name: "P. Bernardus Agus Rukiyanto", role: "Wakil Lembaga Kateketik (Perdikkati), Komisi Kateketik KWI", place: "Jakarta (KWI)", since: "" },
   { name: "P. Antonius Vico Christiawan", role: "Sekretaris Komisi Pendidikan KWI", place: "Jakarta (KWI)", since: "" },
+
+  /* ---------- TAMBAHAN (dari halaman Komunitas & arsip konten jesuits.id) ---------- */
+  { name: "P. Benedictus Hari Juliawan", role: "Superior Komunitas Kolese St. Robertus Bellarminus; Provinsial SJ 2020–2026", place: "Yogyakarta", since: "2026", ordination: "Doktor Development Studies, Universitas Oxford" },
+  { name: "P. Antonius Gustawan", role: "Superior Komunitas Kolese Johanes de Britto", place: "Yogyakarta", since: "2026" },
+  { name: "P. Yosephus Ispuroyanto Iswarahadi", role: "Superior Komunitas Bener", place: "Bener, Purworejo", since: "2026" },
+  { name: "P. Laurentius Priyo Poedjiono", role: "Superior Komunitas Santo Stanislaus", place: "Girisonta", since: "2026" },
+  { name: "P. Bambang Alfred Sipayung", role: "Superior Komunitas Rumah Provinsialat SJ", place: "Semarang", since: "2026" },
+  { name: "P. Yohanes Sudriyanto", role: "Superior Komunitas Kolese Le Cocq d'Armandville", place: "Indonesia", since: "2026" },
+  { name: "P. Leo Agung Sardi", role: "Superior Komunitas Seminari St. Petrus Kanisius", place: "Mertoyudan", since: "2026" },
+  { name: "P. Simon Petrus Bambang Ponco Santosa", role: "Superior Komunitas Beato Miguel Pro", place: "Jakarta", since: "2026" },
+  { name: "P. Antonius Dieng Karnedi", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Ignatius Dio Ernanda Johandika", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Leslie Joseph Bingkasan", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Danang Bramasti", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Christoforus Iuliano Mesaroga", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Ignatius Damar Adi Wicaksana", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Agustinus Rudy Chandra Wijaya", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Ignatius Suryadi Prajitno", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Ignatius Drajat Soesilo", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Yohanes Paulus Sunari", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "S. Laurensius Herdian Pambudi", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "S. Lambertus Alfred", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "S. Daud Kefas Raditya", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "S. Arnold Lintang Yanviero", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "S. Wahyu Mega", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
 ];
 
 /* ---------- TELAH BERPU-LANG / MENINGGAL (dari Obituari) ----------
