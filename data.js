@@ -178,7 +178,8 @@ const activeJesuits = [
   { name: "S. Arnold Lintang Yanviero", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
   { name: "S. Wahyu Mega", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
   { name: "P. Yohanes Deodatus", role: "Pastor Rekan Gereja Katedral Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
-  { name: "P. Bernardus Christian Triyudo Prastowo", role: "Pastor Rekan Gereja Katedral Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
+  { name: "P. Bernardus Christian Triyudo Prastowo", role: "Pastor Kepala Paroki Santo Petrus dan Paulus, Mangga Besar (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "2025" },
+  { name: "P. Vincentius Haryanto", role: "Tugas di Rumah Retret Panti Semedi, Klaten", place: "Klaten", since: "" },
 ];
 
 /* ---------- TELAH BERPU-LANG / MENINGGAL (dari Obituari) ----------
