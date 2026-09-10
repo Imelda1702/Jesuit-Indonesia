@@ -131,7 +131,7 @@ const activeJesuits = [
   { name: "S. Septian Kurniawan", role: "Mahasiswa teologi tahun pertama, FTW (Kolese St. Ignatius / Kolsani)", place: "Yogyakarta", since: "2026" },
   { name: "Br. Nicolaus David Kristianto", role: "Bruder Jesuit; pembaharu kaul, Retret Bruder JCAP, Girisonta", place: "Girisonta", since: "2024" },
   { name: "Br. Yohanes Sarju", role: "Kepala Departemen Pengembangan SDM – Pelayanan Umum – Tenaga Gereja, KWI", place: "Jakarta (KWI)", since: "2020", catatan: "Marga/belakang tidak dipublikasikan di jesuits.id." },
-  { name: "P. Fransiskus Wawan Setyadi", role: "Imam Jesuit (kaul akhir 2020)", place: "Indonesia", since: "2020", kaulAkhir: "Kaul akhir Des 2019/2020 (dekrit P. Jenderal 15 Jun 2020)" },
+  { name: "P. Fransiskus Wawan Setyadi", role: "Dosen filsafat & Wakil Ketua III STF Driyarkara; pelatih Komisi Komunikasi Sosial (Komsos) KWI", place: "Jakarta", since: "2026", kaulAkhir: "Kaul akhir 1 Jan 2021, Gereja St. Antonius Padua, Surakarta (dekrit P. Jenderal 15 Jun 2020)" },
   { name: "P. Baskara T. Wardaya", role: "PRAKSIS (Jesuit Centre for Research & Advocacy); bermukim di Residensi Kolese Kanisius", place: "Menteng, Jakarta", since: "2024" },
   { name: "P. Ignatius Ismartono", role: "Pendampingan rohani (Talitha Kum / Sahabat Insan), Kolese Kanisius", place: "Menteng, Jakarta", since: "2024" },
   { name: "Br. Matheus Sugiyono", role: "Direktur Pusat Pelatihan Edukasi Kolese Kanisius & Ekonom Komunitas", place: "Menteng, Jakarta", since: "2024" },
