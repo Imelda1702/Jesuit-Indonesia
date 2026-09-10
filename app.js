@@ -224,7 +224,7 @@ function renderCommunities() {
       ${c.place ? `<p class="comm-place">${c.place}</p>` : ""}
       ${c.superior ? `<p class="comm-sup">${t.superiorLabel}: ${c.superior}</p>` : ""}
       ${parts.length ? `<p class="comm-parts">${parts.join(" · ")}</p>` : ""}
-      <span class="badge">${c.total != null ? c.total + " " + t.membersLabel : "—"}</span>
+      <span class="badge">${(c.members && c.members.length) ? c.members.length : (c.total != null ? c.total : "—")} ${t.membersLabel}</span>
       ${mem ? `<ul class="comm-members">${mem}</ul>` : ""}
     `;
     frag.appendChild(card);
