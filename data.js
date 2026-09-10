@@ -130,7 +130,7 @@ const activeJesuits = [
   { name: "P. Isodorus Bangkit Susetyo Adi Nugroho", role: "Staf SMA YPPK Adhi Luhur", place: "Nabire, Papua", since: "2025", ordination: "Imam 23 Jul 2025, Gereja St. Antonius Padua, Kotabaru, Yogyakarta" },
   { name: "P. Leo Perkasa Tanjung", role: "Studi Kitab Suci di Biblicum", place: "Roma", since: "2025", ordination: "Imam 23 Jul 2025, Gereja St. Antonius Padua, Kotabaru, Yogyakarta" },
   { name: "P. Jacobus Aditya Christie Manggala", role: "Direktur Campus Ministry, Universitas Sanata Dharma", place: "Yogyakarta", since: "2025", ordination: "Imam 23 Jul 2025, Gereja St. Antonius Padua, Kotabaru, Yogyakarta" },
-  { name: "P. Roberthus (Robert) Rimmin", role: "Pastor mahasiswa Jakarta Barat; komunitas Beato Rupert Mayer", place: "Jakarta", since: "", ordination: "Imam 14 Jul 1999, Yogyakarta (bersama P. Tarcisius Dewanto dkk.)" },
+  { name: "P. Roberthus (Robert) Rimmin", role: "Moderator Kerasulan Mahasiswa Tangerang; sementara tinggal di Wisma St. Agustinus, Tomang (komunitas Beato Rupert Mayer)", place: "Tangerang / Tomang, Jakarta", since: "1 Agt 2025", ordination: "Imam 14 Jul 1999, Yogyakarta (bersama P. Tarcisius Dewanto dkk.)" },
   { name: "S. Adrianus Raditya Indriyatno", role: "Mahasiswa filsafat, STF Driyarkara (tinggal di Kolese Hermanum)", place: "Jakarta", since: "2026" },
   { name: "S. Septian Kurniawan", role: "Mahasiswa teologi tahun pertama, FTW (Kolese St. Ignatius / Kolsani)", place: "Yogyakarta", since: "2026" },
   { name: "Br. Nicolaus David Kristianto", role: "Bruder Jesuit; pembaharu kaul, Retret Bruder JCAP, Girisonta", place: "Girisonta", since: "2024" },
