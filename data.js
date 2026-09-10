@@ -177,6 +177,8 @@ const activeJesuits = [
   { name: "S. Daud Kefas Raditya", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
   { name: "S. Arnold Lintang Yanviero", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
   { name: "S. Wahyu Mega", role: "Skolastik Serikat Jesus; penugasan terbaru belum dipublikasikan", place: "Indonesia", since: "" },
+  { name: "P. Yohanes Deodatus", role: "Pastor Rekan Gereja Katedral Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
+  { name: "P. Bernardus Christian Triyudo Prastowo", role: "Pastor Rekan Gereja Katedral Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
 ];
 
 /* ---------- TELAH BERPU-LANG / MENINGGAL (dari Obituari) ----------
@@ -550,15 +552,16 @@ const communities = [
   { name: "Kolese Mikael", place: "Surakarta", superior: "P. Markus Sjamsul Wanandi", priests: 12, scholastics: 1, brothers: 1, total: 14, members: ["S. Roberthus Kalis Jati Irawan", "P. Tiro Angelo Daenuwy"] },
   { name: "Komunitas Santo Yusup", place: "Indonesia", superior: "", priests: 13, scholastics: 0, brothers: 0, total: 13, members: ["P. Rafael Mathando Hinganaday", "P. Benedictus Cahyo Christanto"] },
   { name: "Rumah Provinsialat SJ", place: "Semarang", superior: "P. Bambang Alfred Sipayung", priests: 13, scholastics: 0, brothers: 2, total: 15, members: ["P. Bambang Alfred Sipayung", "P. Herman Joseph Suhardiyanto", "P. Antonius Septian Marhenanto", "P. Robertus Sigit Adi Nugroho"] },
-  { name: "Kolese Loyola", place: "Indonesia", superior: "P. Yakobus Rudiyanto", priests: 5, scholastics: 2, brothers: 0, total: 7, members: ["P. Yakobus Rudiyanto"] },
+  { name: "Kolese Loyola", place: "Indonesia", superior: "", priests: 5, scholastics: 2, brothers: 0, total: 7, members: [] },
   { name: "Kolese Le Cocq d'Armandville", place: "Papua", superior: "P. Yohanes Sudriyanto", priests: 7, scholastics: 0, brothers: 2, total: 9, members: ["P. Yohanes Sudriyanto"] },
   { name: "Seminari St. Petrus Kanisius", place: "Mertoyudan", superior: "P. Leo Agung Sardi", priests: 9, scholastics: 1, brothers: 1, total: 11, members: ["P. Leo Agung Sardi", "P. Gregorius Agung Satriyo Wibisono", "S. Beda Holy Septianno", "P. Joannes Maryana"] },
   { name: "Kolese St. Petrus Kanisius", place: "Wonosari", superior: "P. Joannes Heru Hendarto", priests: 10, scholastics: 2, brothers: 3, total: 15, members: ["P. Joannes Heru Hendarto"] },
-  { name: "Beato Rupert Mayer", place: "Indonesia", superior: "P. Albertus Hani Rudi Hartoko", priests: 18, scholastics: 0, brothers: 0, total: 18, members: ["P. Albertus Hani Rudi Hartoko"] },
+  { name: "Beato Rupert Mayer", place: "Jakarta", superior: "", priests: 18, scholastics: 0, brothers: 0, total: 18, members: ["P. Macarius Maharsono Probho", "P. Yohanes Deodatus", "P. Bernardus Christian Triyudo Prastowo"] },
   { name: "Beato Miguel Pro", place: "Jakarta", superior: "P. Simon Petrus Bambang Ponco Santosa", total: null, members: ["P. Simon Petrus Bambang Ponco Santosa", "P. Ignatius Suryadi"] },
   { name: "Kolese Hermanum", place: "Jakarta", superior: "", total: null, members: ["P. Thomas Hidya Tjaya", "P. Ferdinandus Effendi Kusuma Sunur", "P. Thomas Aquinas Maswan Susinto", "P. Josephus Ageng Marwata", "P. Odemus Bei Witono", "P. Ignatius Windar Santoso", "S. Adrianus Raditya Indriyatno"] },
   { name: "Komunitas Gonzaga", place: "Jakarta", superior: "P. Emmanuel Baskoro Poedjinoegroho", total: null, members: ["P. Emmanuel Baskoro Poedjinoegroho", "P. Eduard C. Ratu Dopo", "P. Yulius Suroso"] },
-  { name: "Kolese Kanisius", place: "Menteng, Jakarta", superior: "P. Leonardus Evert Bambang Winandoko", total: null, members: ["P. Leonardus Evert Bambang Winandoko", "P. Benedictus Bambang Triatmoko", "P. Thomas Becket Gandi Hartana", "P. Markus Sjamsul Wanandi", "P. Alexander Koko Siswijayanto", "P. Albertus Buddy Haryadi", "P. Baskara T. Wardaya", "P. Ignatius Ismartono", "P. Christoforus Kristiono Puspo", "Br. Matheus Sugiyono", "Fr. Leander Emanuel Arya Wikan Prabantara"] },
+  { name: "Kolese Kanisius", place: "Menteng, Jakarta", superior: "P. Leonardus Evert Bambang Winandoko", total: null, members: ["P. Leonardus Evert Bambang Winandoko", "P. Benedictus Bambang Triatmoko", "P. Thomas Becket Gandi Hartana", "P. Markus Sjamsul Wanandi", "P. Alexander Koko Siswijayanto", "P. Albertus Buddy Haryadi", "P. Baskara T. Wardaya", "P. Ignatius Ismartono", "P. Christoforus Kristiono Puspo", "P. Heinrich Angga Indraswara", "Br. Matheus Sugiyono", "Fr. Leander Emanuel Arya Wikan Prabantara"] },
+  { name: "Komunitas ATMI Cikarang", place: "Cikarang", superior: "", total: null, members: ["P. Yakobus Rudiyanto", "P. Tiburtius Agus Sriyono"] },
 ];
 
 /* Anggota yang komunitasnya belum teridentifikasi dari data publik. */
@@ -604,7 +607,6 @@ const otherJesuits = [
   { name: "P. Agustinus Sarwanto", role: "Komisi Keuangan Provindo" },
   { name: "P. Albertus Sadhyoko Rahardjo", role: "Komisi Keuangan Provindo" },
   { name: "P. Yusup Edi Mulyono", role: "Komisi Keuangan Provindo" },
-  { name: "P. Macarius Maharsono Probho", role: "Pastor Kepala Paroki Santa Maria Diangkat ke Surga (Katedral)" },
   { name: "P. Athanasius Kristiono Purwadi", role: "Pastor Kepala Paroki Hati Santa Perawan Maria Tak Bernoda" },
   { name: "P. Franciscus Xaverius Dedomau Djatmiko da Gomez", role: "Pastor Kepala Paroki Santa Perawan Maria Ratu" },
   { name: "P. Antonius Dhimas Hardjuna", role: "Pastor Kepala Gereja Paroki Santa Maria Bunda Allah" },
@@ -627,7 +629,6 @@ const otherJesuits = [
   { name: "P. Synesius Suyitna", role: "Sekretaris Pengurus Yayasan Taman Tani" },
   { name: "P. Andreas Aryono Mantiri", role: "Bendahara Pengurus Yayasan Taman Tani / Asisten Ekonom Provindo" },
   { name: "P. Stefanus Hendrianto", role: "Imam Jesuit Provinsi Jesuits West (Amerika Serikat); ditahbiskan 8 Juni 2019, Gereja Our Lady of La Vang, Portland, Oregon; mantan aktivis pro-demokrasi 1998" },
-  { name: "P. Heinrich Angga Indraswara", role: "Imam Jesuit, bertugas di Paroki St. Yohanes Maria Vianney, Jakarta (ditahbiskan 2018)" },
   { name: "P. Agustinus Winaryanta", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan" },
   { name: "P. Christoforus Bayu Risanto", role: "Ahli Meteorologi, Vatican Observatory & Research Associate, University of Arizona" },
   { name: "P. Thomas Septi Widhiyudana", role: "Anggota Serikat Jesus; penugasan terbaru belum dipublikasikan" },
@@ -649,7 +650,6 @@ const otherJesuits = [
   { name: "P. Roberthus (Robert) Rimmin", role: "Imam Jesuit senior; karya misi di Timor Leste sejak tahbisan" },
   { name: "Br. Yohanes Sarju", role: "Kepala Departemen Pengembangan SDM – Pelayanan Umum – Tenaga Gereja, KWI" },
   { name: "P. Fransiskus Wawan Setyadi", role: "Dosen filsafat & Wakil Ketua III STF Driyarkara; pelatih Komisi Komunikasi Sosial (Komsos) KWI" },
-  { name: "P. Tiburtius Agus Sriyono", role: "Pembina/direksi Politeknik Industri ATMI Cikarang & ATMI Surakarta" },
   { name: "P. Franz Magnis-Suseno", role: "Dosen Program Doktor Filsafat, STF Driyarkara" },
   { name: "P. Justinus Sudarminta", role: "Ketua Senat Dosen & pengajar S2/S3, STF Driyarkara" },
   { name: "P. Johanes Haryatmoko", role: "Dosen/peneliti (STF Driyarkara / Universitas Sanata Dharma)" },
