@@ -142,8 +142,8 @@ const activeJesuits = [
   { name: "Fr. Leander Emanuel Arya Wikan Prabantara", role: "Staf Wakil Direktur I Bidang Kesiswaan, Kolese Kanisius (2025-2027)", place: "Menteng, Jakarta", since: "2025" },
   { name: "P. Eduard C. Ratu Dopo", role: "Kepala Sekolah SMA Kolese Gonzaga", place: "Jakarta", since: "2024" },
   { name: "P. Yulius Suroso", role: "Wakil Kepala Sekolah Bidang Kesiswaan, SMA Kolese Gonzaga", place: "Jakarta", since: "2024" },
-  { name: "P. Tiburtius Agus Sriyono", role: "Pembina/direksi Politeknik Industri ATMI Cikarang & ATMI Surakarta", place: "Cikarang / Solo", since: "2020" },
-  { name: "P. Yakobus Rudiyanto", role: "Ketua Yayasan Karya ATMI", place: "Cikarang", since: "2022" },
+  { name: "P. Tiburtius Agus Sriyono", role: "Pembina/direksi Politeknik Industri ATMI Cikarang & ATMI Surakarta (komunitas Kolese Kanisius)", place: "Cikarang / Solo", since: "2020" },
+  { name: "P. Yakobus Rudiyanto", role: "Ketua Yayasan Karya ATMI (komunitas Kolese Kanisius)", place: "Cikarang", since: "2022" },
   { name: "P. Franz Magnis-Suseno", role: "Dosen Program Doktor Filsafat, STF Driyarkara", place: "Jakarta", since: "" },
   { name: "P. Justinus Sudarminta", role: "Ketua Senat Dosen & pengajar S2/S3, STF Driyarkara", place: "Jakarta", since: "" },
   { name: "P. Johanes Haryatmoko", role: "Dosen/peneliti (STF Driyarkara / Universitas Sanata Dharma)", place: "Jakarta / Yogyakarta", since: "" },
@@ -563,8 +563,7 @@ const communities = [
   { name: "Beato Miguel Pro", place: "Jakarta", superior: "P. Simon Petrus Bambang Ponco Santosa", total: null, members: ["P. Simon Petrus Bambang Ponco Santosa", "P. Ignatius Suryadi", "P. Franciscus Xaverius Dedomau Djatmiko da Gomez"] },
   { name: "Kolese Hermanum", place: "Jakarta", superior: "", total: null, members: ["P. Thomas Hidya Tjaya", "P. Ferdinandus Effendi Kusuma Sunur", "P. Thomas Aquinas Maswan Susinto", "P. Josephus Ageng Marwata", "P. Odemus Bei Witono", "P. Ignatius Windar Santoso", "P. Fransiskus Wawan Setyadi", "S. Adrianus Raditya Indriyatno"] },
   { name: "Komunitas Gonzaga", place: "Jakarta", superior: "P. Emmanuel Baskoro Poedjinoegroho", total: null, members: ["P. Emmanuel Baskoro Poedjinoegroho", "P. Eduard C. Ratu Dopo", "P. Yulius Suroso"] },
-  { name: "Kolese Kanisius", place: "Menteng, Jakarta", superior: "P. Leonardus Evert Bambang Winandoko", total: null, members: ["P. Leonardus Evert Bambang Winandoko", "P. Benedictus Bambang Triatmoko", "P. Thomas Becket Gandi Hartana", "P. Markus Sjamsul Wanandi", "P. Alexander Koko Siswijayanto", "P. Albertus Buddy Haryadi", "P. Baskara T. Wardaya", "P. Ignatius Ismartono", "P. Christoforus Kristiono Puspo", "P. Heinrich Angga Indraswara", "Br. Matheus Sugiyono", "Fr. Leander Emanuel Arya Wikan Prabantara"] },
-  { name: "Komunitas ATMI Cikarang", place: "Cikarang", superior: "", total: null, members: ["P. Yakobus Rudiyanto", "P. Tiburtius Agus Sriyono"] },
+  { name: "Kolese Kanisius", place: "Menteng, Jakarta", superior: "P. Leonardus Evert Bambang Winandoko", total: null, members: ["P. Leonardus Evert Bambang Winandoko", "P. Benedictus Bambang Triatmoko", "P. Thomas Becket Gandi Hartana", "P. Markus Sjamsul Wanandi", "P. Alexander Koko Siswijayanto", "P. Albertus Buddy Haryadi", "P. Baskara T. Wardaya", "P. Ignatius Ismartono", "P. Christoforus Kristiono Puspo", "P. Heinrich Angga Indraswara", "P. Yakobus Rudiyanto", "P. Tiburtius Agus Sriyono", "Br. Matheus Sugiyono", "Fr. Leander Emanuel Arya Wikan Prabantara"] },
 ];
 
 /* Anggota yang komunitasnya belum teridentifikasi dari data publik. */
