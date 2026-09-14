@@ -474,3 +474,24 @@ mark { background: var(--primary-soft); color: var(--primary); border-radius: 3p
 .comm-card.other { grid-column: 1 / -1; }
 .comm-card.other .comm-members { max-height: 320px; columns: 2; column-gap: 24px; }
 @media (max-width: 640px) { .comm-card.other .comm-members { columns: 1; } }
+
+/* ---------- Avatar inisial di sebelah nama ---------- */
+.name-row { display: flex; align-items: center; gap: 10px; margin: 0 0 6px; }
+.name-row h3 { margin: 0; }
+.avatar-sm {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .02em;
+  border: 1px solid var(--border);
+}
+.avatar-sm img { width: 100%; height: 100%; object-fit: cover; display: block; }

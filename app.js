@@ -120,6 +120,24 @@ function catOf(p) {
   return "lain";
 }
 
+function initialsOf(name) {
+  return (name || "")
+    .replace(/^(P\.|S\.|Br\.|F\.|Fr\.|Sch\.|RD\.|RP\.)\s*/i, "")
+    .split(/\s+/)
+    .filter((w) => w && /[A-Za-z]/.test(w[0]))
+    .map((w) => w[0])
+    .slice(0, 2)
+    .join("")
+    .toUpperCase();
+}
+
+function avatarHtml(p) {
+  if (p.photo) {
+    return `<span class="avatar-sm"><img src="${p.photo}" alt="${p.name}" loading="lazy" /></span>`;
+  }
+  return `<span class="avatar-sm" aria-hidden="true">${initialsOf(p.name)}</span>`;
+}
+
 function renderActive(list) {
   activeListEl.innerHTML = "";
   const frag = document.createDocumentFragment();
@@ -127,9 +145,12 @@ function renderActive(list) {
     const card = document.createElement("article");
     card.className = "card";
     card.innerHTML = `
-      ${p.photo ? `<div class="card-photo${p.isProvincial ? " portrait" : ""}${p.photoZoom ? " zoom" : ""}"><img src="${p.photo}" alt="${p.name}" /></div>` : ""}
+      ${p.photo && p.isProvincial ? `<div class="card-photo${p.photoZoom ? " zoom" : ""}"><img src="${p.photo}" alt="${p.name}" /></div>` : ""}
       <div class="card-main">
-        <h3>${highlight(p.name, currentQuery)}</h3>
+        <div class="name-row">
+          ${p.isProvincial ? "" : avatarHtml(p)}
+          <h3>${highlight(p.name, currentQuery)}</h3>
+        </div>
         <p class="role">${highlight(p.role, currentQuery)}</p>
         <p class="place">${highlight(p.place, currentQuery)}</p>
         ${p.ordination ? `<p class="rio">Tahbisan: ${highlight(p.ordination, currentQuery)}</p>` : ""}
