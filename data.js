@@ -182,6 +182,8 @@ const activeJesuits = [
   { name: "P. Vincentius Haryanto", role: "Tugas di Rumah Retret Panti Semedi, Klaten", place: "Klaten", since: "" },
   { name: "P. Benny Beatus Wetty", role: "Pastor di Paroki Santa Theresia, Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
   { name: "P. Tito", role: "Pastor di Paroki Santa Theresia, Jakarta (komunitas Beato Rupert Mayer)", place: "Jakarta", since: "" },
+  { name: "P. Martinus Hadisiswoyo", role: "Direktur Yayasan Kanisius Pusat; mantan Direktur Perkumpulan Strada (2009–2019)", place: "Yogyakarta", since: "2023" },
+
 ];
 
 /* ---------- TELAH BERPU-LANG / MENINGGAL (dari Obituari) ----------
