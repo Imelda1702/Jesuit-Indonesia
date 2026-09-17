@@ -532,7 +532,7 @@ const provincials = [
   { name: "P. Paulus Wiryono Priyotamtama", period: "1996–2002", detail: "Pater Wir; dari Madiun; memimpin masa Reformasi 1998.", photo: "photos/wiryono.jpg" },
   { name: "P. Carolus Putranto", period: "1990–1996", detail: "Dari Sukabumi; menjadi provincial pada usia 39. Teolog dogmatik.", photo: "photos/putranto.jpg" },
   { name: "P. Franciscus Xaverius Danuwinata", period: "1989–1990", detail: "Pater Danu; dari Purwodadi; tokoh pendidikan tinggi. Wafat 26 Agt 2016.", photo: "photos/danuwinata.jpg" },
-  { name: "P. Josephus Darminta", period: "1984–1989", detail: "Pater Darminta; dari Kalasan, Yogyakarta; penulis spiritualitas Ignasian.", photo: "photos/darminta.jpg", photoZoom: true },
+  { name: "P. Josephus Darminta", period: "1984–1989", detail: "Pater Darminta; dari Kalasan, Yogyakarta; penulis spiritualitas Ignasian.", photo: "photos/darminta.jpg" },
   { name: "Kardinal Julius Darmaatmadja", period: "1981–1983", detail: "Dari Muntilan; kelak Uskup Agung Semarang & Jakarta, Kardinal 1994.", photo: "photos/darmaatmadja.jpg" },
   { name: "P. Paulus Suradibrata", period: "1975–1981", detail: "Pater Sura; dari Bantul. Orang Asia pertama jadi Asisten Jenderal Asia Timur & Oseania. Wafat 1 Jan 2018.", photo: "photos/suradibrata.jpg" },
   { name: "P. Antonius Soenarja", period: "1971–1975", detail: "Provincial pertama; dari Klaten. Wafat 30 Sep 1988.", photo: "photos/soenarja.jpg" },
