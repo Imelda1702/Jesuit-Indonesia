@@ -145,7 +145,7 @@ function renderActive(list) {
     const card = document.createElement("article");
     card.className = "card";
     card.innerHTML = `
-      ${p.photo && p.isProvincial ? `<div class="card-photo${p.photoZoom ? " zoom" : ""}"><img src="${p.photo}" alt="${p.name}" /></div>` : ""}
+      ${p.photo && p.isProvincial ? `<div class="card-photo portrait${p.photoZoom ? " zoom" : ""}"><img src="${p.photo}" alt="${p.name}" /></div>` : ""}
       <div class="card-main">
         <div class="name-row">
           ${p.isProvincial ? "" : avatarHtml(p)}

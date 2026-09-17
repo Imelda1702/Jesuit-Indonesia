@@ -524,7 +524,7 @@ const deceasedJesuits = [
 
 /* ---------- PROVINSIAL SJ INDONESIA (dari artikel "Provincial dari Masa ke Masa") ---------- */
 const provincials = [
-  { name: "P. Albertus Bagus Laksana", period: "2026–2032", detail: "Provincial kini; teolog komparatif; mantan Rektor Universitas Sanata Dharma.", photo: "photos/bagus-laksana.jpg" },
+  { name: "P. Albertus Bagus Laksana", period: "2026–2032", detail: "Provincial kini; teolog komparatif; mantan Rektor Universitas Sanata Dharma.", photo: "photos/bagus-laksana.png" },
   { name: "P. Benedictus Hari Juliawan", period: "2020–2026", detail: "Pater Benny; dari Ambarawa; doktor Development Studies, Oxford.", photo: "photos/hari-juliawan.jpg" },
   { name: "P. Petrus Sunu Hardiyanta", period: "2014–2020", detail: "Pater Sunu; dari Medari, Yogyakarta; kini instruktur tersiat Girisonta.", photo: "photos/sunu-hardiyanta.jpg" },
   { name: "P. Robertus Bellarminus Rijo Moersanto", period: "2008–2014", detail: "Pater Riyo; dari Magelang; kini superior Misi Pakistan.", photo: "photos/rijo-moersanto.jpg" },
